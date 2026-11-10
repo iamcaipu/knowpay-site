@@ -1,0 +1,295 @@
+/* ============================================================
+   Shared styles — static multi-page site (Phase 1)
+   NOTE: "SellerBase" is a temporary working brand name.
+   ============================================================ */
+
+:root {
+  --ink: #1a2233;
+  --ink-soft: #55617a;
+  --line: #e3e8f0;
+  --bg: #ffffff;
+  --bg-soft: #f6f8fb;
+  --accent: #2457ff;
+  --accent-dark: #1a43cc;
+  --ok: #0e9f6e;
+  --radius: 12px;
+  --maxw: 1040px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+
+/* ---------- header / nav ---------- */
+header.site {
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+.logo {
+  font-weight: 700;
+  font-size: 19px;
+  letter-spacing: -0.3px;
+  color: var(--ink);
+  text-decoration: none;
+}
+.logo span { color: var(--accent); }
+nav.links a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-size: 15px;
+  margin-left: 28px;
+}
+nav.links a:hover { color: var(--ink); }
+nav.links a.cta {
+  color: #fff;
+  background: var(--accent);
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+nav.links a.cta:hover { background: var(--accent-dark); color: #fff; }
+
+/* ---------- hero ---------- */
+.hero {
+  background: var(--bg-soft);
+  border-bottom: 1px solid var(--line);
+  padding: 88px 0 72px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 42px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  max-width: 720px;
+  margin: 0 auto 20px;
+}
+.hero p.sub {
+  color: var(--ink-soft);
+  font-size: 19px;
+  max-width: 640px;
+  margin: 0 auto 32px;
+}
+.hero .btn-row { display: flex; gap: 14px; justify-content: center; }
+
+/* ---------- buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: 13px 26px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:hover { background: var(--accent-dark); }
+.btn-ghost {
+  border: 1px solid var(--line);
+  color: var(--ink);
+  background: #fff;
+}
+.btn-ghost:hover { border-color: var(--ink-soft); }
+.btn-block { display: block; text-align: center; width: 100%; }
+
+/* ---------- sections ---------- */
+section { padding: 72px 0; }
+section.soft { background: var(--bg-soft); }
+h2.section-title {
+  font-size: 30px;
+  letter-spacing: -0.4px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+p.section-sub {
+  text-align: center;
+  color: var(--ink-soft);
+  max-width: 620px;
+  margin: 0 auto 48px;
+}
+
+/* ---------- product cards ---------- */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+.card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 32px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.card .tag {
+  display: inline-block;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--accent);
+  background: #eef2ff;
+  border-radius: 999px;
+  padding: 4px 12px;
+  margin-bottom: 14px;
+  align-self: flex-start;
+}
+.card h3 { font-size: 21px; margin-bottom: 10px; }
+.card p.desc { color: var(--ink-soft); margin-bottom: 18px; }
+.card ul { list-style: none; margin-bottom: 24px; }
+.card ul li {
+  padding-left: 26px;
+  position: relative;
+  margin-bottom: 9px;
+  color: var(--ink);
+  font-size: 15px;
+}
+.card ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--ok);
+  font-weight: 700;
+}
+.card .card-foot { margin-top: auto; }
+.card .price-line {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.card .price { font-size: 34px; font-weight: 800; letter-spacing: -0.5px; }
+.card .once { color: var(--ink-soft); font-size: 14px; }
+
+/* ---------- how it works ---------- */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+.step {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px;
+  background: #fff;
+}
+.step .num {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.step h3 { font-size: 18px; margin-bottom: 8px; }
+.step p { color: var(--ink-soft); font-size: 15px; }
+
+/* ---------- trust strip ---------- */
+.trust {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+.trust .item strong { display: block; font-size: 16px; margin-bottom: 4px; }
+.trust .item span { color: var(--ink-soft); font-size: 14px; }
+
+/* ---------- faq ---------- */
+.faq { max-width: 720px; margin: 0 auto; }
+.faq details {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  padding: 18px 22px;
+  margin-bottom: 12px;
+}
+.faq summary { font-weight: 600; cursor: pointer; font-size: 16px; }
+.faq details p { margin-top: 10px; color: var(--ink-soft); font-size: 15px; }
+
+/* ---------- final cta ---------- */
+.final-cta { text-align: center; }
+
+/* ---------- legal / document pages ---------- */
+.doc {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 56px 24px 80px;
+}
+.doc h1 { font-size: 32px; letter-spacing: -0.4px; margin-bottom: 6px; }
+.doc .updated { color: var(--ink-soft); font-size: 14px; margin-bottom: 36px; }
+.doc h2 {
+  font-size: 21px;
+  margin: 36px 0 12px;
+  letter-spacing: -0.2px;
+}
+.doc h3 { font-size: 17px; margin: 22px 0 8px; }
+.doc p, .doc li { color: #2c3648; font-size: 15.5px; }
+.doc ul, .doc ol { padding-left: 22px; margin: 10px 0; }
+.doc table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0;
+  font-size: 14.5px;
+}
+.doc th, .doc td {
+  border: 1px solid var(--line);
+  padding: 9px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+.doc th { background: var(--bg-soft); }
+.doc .note {
+  background: #fff8e6;
+  border: 1px solid #f0dfa8;
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin: 18px 0;
+  font-size: 15px;
+}
+
+/* ---------- footer ---------- */
+footer.site {
+  border-top: 1px solid var(--line);
+  background: var(--bg-soft);
+  padding: 40px 0;
+  margin-top: 40px;
+}
+.foot-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.foot-brand { font-weight: 700; margin-bottom: 6px; }
+footer.site p, footer.site a { color: var(--ink-soft); font-size: 14px; }
+footer.site a { text-decoration: none; }
+footer.site a:hover { color: var(--ink); }
+.foot-links { display: flex; gap: 22px; }
+.foot-copy { margin-top: 22px; font-size: 13px; color: #8a94a8; }
+
+/* ---------- responsive ---------- */
+@media (max-width: 860px) {
+  .cards { grid-template-columns: 1fr; }
+  .steps { grid-template-columns: 1fr; }
+  .trust { grid-template-columns: repeat(2, 1fr); }
+  .hero h1 { font-size: 32px; }
+  nav.links a { margin-left: 16px; font-size: 14px; }
+}

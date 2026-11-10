@@ -1,0 +1,21 @@
+# 内部文件，不进仓库（仓库根目录 = 网站根目录，提交了就会被公网访问）
+PLACEHOLDERS.md
+
+# 操作系统生成的垃圾文件
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# 编辑器配置
+.vscode/
+.idea/
+*.swp
+
+# 密钥、环境变量（以后接 Pancake API 时一定会用到）
+.env
+.env.*
+*.key
+*.pem
+
+# 日志
+*.log
