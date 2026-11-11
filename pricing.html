@@ -1,104 +1,165 @@
 <!DOCTYPE html>
-<!-- ============================================================
-  pricing.html — Pricing page (Phase 1: Pancake storefront review)
-  REVIEW REQUIREMENTS MET: no login required; each plan lists
-  name, price, billing type (one-time / no auto-renewal) and what
-  is included. Replace "#" buy links with Pancake checkout URLs
-  and confirm final prices with the user.
-  ============================================================ -->
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pricing — SellerBase</title>
-  <meta name="description" content="Simple one-time pricing. Cross-Border E-Commerce Playbook at $59 and Feishu Operations System at $79. One-time payment, instant digital delivery, no subscriptions.">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing — KnowPay</title>
+<meta name="description" content="TikTok Shop Playbook (2026 Edition) US$299, 12 months of access; Operations System US$199, yours forever. Both one-time payment — no subscription, no auto-renewal.">
+<link rel="stylesheet" href="styles.css">
+<link rel="alternate" hreflang="en" href="pricing.html">
+<link rel="alternate" hreflang="zh-CN" href="zh/pricing.html">
 </head>
 <body>
 
 <header class="site">
   <div class="wrap nav">
-    <a class="logo" href="index.html">Seller<span>Base</span></a>
-    <nav class="links">
-      <a href="index.html#products">Products</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="index.html#faq">FAQ</a>
-      <a class="cta" href="index.html">Home</a>
-    </nav>
+    <a class="logo" href="index.html">Know<em>Pay</em><span>Cross-border knowledge, delivered.</span></a>
+    <div class="nav-right">
+      <nav class="nav-links">
+        <a href="tutorials.html">Tutorials</a>
+        <a href="templates.html">Templates</a>
+        <a class="on" href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="nav-tools">
+        <a class="lang" href="zh/pricing.html">中文</a>
+        <a class="btn btn-primary btn-sm" href="pricing.html">Buy now</a>
+      </div>
+    </div>
   </div>
 </header>
 
-<section class="hero" style="padding: 64px 0 56px;">
+<div class="wrap crumb"><a href="index.html">Home</a><span>/</span>Pricing</div>
+
+<section style="padding-top:36px; padding-bottom:40px;">
   <div class="wrap">
-    <h1 style="font-size: 36px;">Simple, one-time pricing</h1>
-    <p class="sub">Pay once, own it. Every product below is a one-time purchase with instant digital delivery — there are no subscriptions, no trials, and no auto-renewal charges.</p>
+    <div class="sec-head">
+      <h2>Two prices, out in the open</h2>
+      <p>Both are digital products, both one-time. No subscription, no auto-renewal, no follow-up charges.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <span class="tag">Playbook · Read online</span>
+        <h3><a href="playbook-2026.html">TikTok Shop Playbook (2026 Edition)</a></h3>
+        <p class="desc">Nine stages, from Positioning to Review. Distilled from four years of hands-on operations.</p>
+        <ul>
+          <li>Complete nine-stage operating loop</li>
+          <li>12 months of online access</li>
+          <li>Content revisions within this edition included</li>
+          <li>Full refund within 3 days, no questions asked</li>
+        </ul>
+        <div class="foot">
+          <div class="price-row">
+            <span class="price">US$299</span>
+          </div>
+          <p class="price-note" style="margin-bottom:16px;">One-time payment · 12 months of access · stops at expiry, never auto-renews</p>
+          <a class="btn btn-primary btn-block" href="#">Get access</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="tag">System · Copy and use</span>
+        <h3><a href="operations-system.html">Feishu/Lark-Based TikTok Shop Operations System</a></h3>
+        <p class="desc">Not the whole chain. Just the money, the stock and the numbers. Demo data and guide included.</p>
+        <ul>
+          <li>Four business modules + two reports</li>
+          <li>Create a copy and it's yours — forever</li>
+          <li>Requires your own Feishu/Lark account (free tier works)</li>
+          <li>No refunds; request a preview before buying</li>
+        </ul>
+        <div class="foot">
+          <div class="price-row">
+            <span class="price">US$199</span>
+          </div>
+          <p class="price-note" style="margin-bottom:16px;">One-time payment · yours forever · updates not included</p>
+          <a class="btn btn-primary btn-block" href="#">Get the link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="soft" style="padding-top:56px;">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Side by side</h2>
+    </div>
+    <table class="cmp">
+      <thead>
+        <tr>
+          <th style="width:22%;">Item</th>
+          <th>Playbook (2026 Edition)</th>
+          <th>Operations System</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Price</td><td>US$299</td><td>US$199</td></tr>
+        <tr><td>Billing cycle</td><td>One-time payment</td><td>One-time payment</td></tr>
+        <tr><td>Auto-renewal</td><td>No</td><td>No</td></tr>
+        <tr><td>Delivery</td><td>Online access granted by email</td><td>Template link sent; buyer creates a copy</td></tr>
+        <tr><td>Term</td><td>12 months, stops at expiry</td><td>Forever — the copy belongs to the buyer</td></tr>
+        <tr><td>Prerequisite</td><td>None — reads in the browser</td><td>Your own Feishu/Lark account</td></tr>
+        <tr><td>Later editions</td><td>2027 Edition sold separately</td><td>Upgrades sold separately, no auto-sync</td></tr>
+        <tr><td>Refund</td><td>Full refund within 3 days, no questions asked</td><td>No refunds; guide and demo preview available on request</td></tr>
+        <tr><td>Best for</td><td>Those who want the moves and the standards</td><td>Those who want money, stock and numbers clear</td></tr>
+      </tbody>
+    </table>
   </div>
 </section>
 
 <section>
+  <div class="wrap-narrow">
+    <h2 style="font-size:22px; margin-bottom:16px;">Delivery, refunds and taxes</h2>
+    <h3 style="font-size:16px; margin-bottom:8px;">Delivery</h3>
+    <p style="color:var(--ink-2); margin-bottom:14px;">Both products are digital. After payment succeeds, the access information is sent to the email you entered at checkout, usually within minutes. If it hasn't arrived in 15 minutes, check spam first, then email support@knowpay.app.</p>
+    <h3 style="font-size:16px; margin-bottom:8px;">Refunds</h3>
+    <p style="color:var(--ink-2); margin-bottom:14px;">Playbook: full refund within 3 days of payment, no questions asked; after 3 days, no refund; access closes once refunded. System: the link can be copied the moment it's sent and cannot be recalled, so no refunds — request the user guide and demo preview by email before buying.</p>
+    <h3 style="font-size:16px; margin-bottom:8px;">Price and taxes</h3>
+    <p style="color:var(--ink-2);">Prices shown exclude any taxes that may apply. Where your jurisdiction requires, applicable taxes are calculated at checkout. Payments are processed by Waffo Pancake; card data never touches our servers.</p>
+    <p class="muted" style="margin-top:20px;">See the full terms in our <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>.</p>
+  </div>
+</section>
+
+<section class="final soft">
   <div class="wrap">
-    <div class="cards">
-      <div class="card">
-        <span class="tag">Knowledge Base</span>
-        <h3>Cross-Border E-Commerce Playbook</h3>
-        <p class="desc">A practitioner's knowledge base for building and running an overseas e-commerce brand, from product selection to scaling.</p>
-        <ul>
-          <li>Product research &amp; selection frameworks</li>
-          <li>Store setup, listings &amp; conversion checklists</li>
-          <li>Marketing channels and campaign playbooks</li>
-          <li>Supply chain, logistics &amp; after-sales SOPs</li>
-          <li>Future content updates at no extra cost</li>
-        </ul>
-        <div class="card-foot">
-          <div class="price-line">
-            <span class="price">$59</span>
-            <span class="once">USD · one-time payment · no auto-renewal</span>
-          </div>
-          <a class="btn btn-primary btn-block" href="#">Buy the Playbook</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <span class="tag">Operations System</span>
-        <h3>Feishu Operations System &amp; Templates</h3>
-        <p class="desc">A complete Feishu Base (multi-dimensional table) operations system with ready-made templates and a step-by-step setup guide.</p>
-        <ul>
-          <li>Product &amp; SKU tracking dashboard</li>
-          <li>Order, inventory and supplier pipelines</li>
-          <li>Marketing calendar &amp; campaign tracker</li>
-          <li>Finance &amp; profit calculation templates</li>
-          <li>Setup guide + email support</li>
-        </ul>
-        <div class="card-foot">
-          <div class="price-line">
-            <span class="price">$79</span>
-            <span class="once">USD · one-time payment · no auto-renewal</span>
-          </div>
-          <a class="btn btn-primary btn-block" href="#">Buy the Operations System</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="note" style="max-width: 760px; margin: 36px auto 0;">
-      <strong>Delivery &amp; refunds:</strong> access links are emailed immediately after payment confirmation. If you have not downloaded or accessed your purchase, you may request a full refund within 7 days — see our <a href="terms.html">Terms of Service</a>. Prices exclude any taxes that may apply in your jurisdiction; applicable taxes are calculated at checkout.
-    </div>
+    <h2>Still not sure which one?</h2>
+    <p>They solve different problems: one teaches you the moves, the other clears up the math.</p>
+    <a class="btn btn-ghost" href="mailto:support@knowpay.app">Email us</a>
   </div>
 </section>
 
 <footer class="site">
   <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <div class="foot-brand">SellerBase</div>
-        <p>Support: <a href="mailto:support@sellerbase.com">support@sellerbase.com</a></p>
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="name">KnowPay</div>
+        <p>Cross-border knowledge, delivered. · Knowledge you can count on.</p>
+        <p style="margin-top:8px;">Support: <a href="mailto:support@knowpay.app">support@knowpay.app</a></p>
       </div>
-      <div class="foot-links">
-        <a href="terms.html">Terms of Service</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="index.html">Home</a>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h4>Products</h4>
+          <a href="tutorials.html">Tutorials</a>
+          <a href="templates.html">Templates</a>
+          <a href="pricing.html">Pricing</a>
+        </div>
+        <div class="foot-col">
+          <h4>Learn</h4>
+          <a href="about.html">About us</a>
+          <a href="index.html#faq">FAQ</a>
+        </div>
+        <div class="foot-col">
+          <h4>Legal</h4>
+          <a href="terms.html">Terms of Service</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
       </div>
     </div>
-    <p class="foot-copy">© 2026 SellerBase. All rights reserved.</p>
+    <div class="foot-bottom">
+      <span>© 2026 KnowPay</span>
+      <span>All products are independently developed third-party content and are not affiliated with TikTok, ByteDance, or Feishu/Lark.</span>
+    </div>
   </div>
 </footer>
 

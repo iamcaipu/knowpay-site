@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220" preserveAspectRatio="xMidYMid meet" role="img" aria-label="运营系统插画：表格与增长曲线">
+  <!-- 底色透明，容器给色；用色锁定站点色盘 -->
+  <!-- 左：数据表窗口 -->
+  <g>
+    <rect x="40" y="44" width="180" height="130" rx="10" fill="#114453" stroke="#1D5B6B" stroke-width="2"/>
+    <!-- 窗口标题条 -->
+    <rect x="40" y="44" width="180" height="26" rx="10" fill="#0F3B48"/>
+    <rect x="40" y="60" width="180" height="10" fill="#0F3B48"/>
+    <circle cx="56" cy="57" r="4" fill="#E8760A"/>
+    <circle cx="70" cy="57" r="4" fill="#4E9EC4"/>
+    <circle cx="84" cy="57" r="4" fill="#8FB8BF"/>
+    <!-- 表头 -->
+    <rect x="52" y="80" width="68" height="10" rx="4" fill="#4E9EC4"/>
+    <rect x="128" y="80" width="52" height="10" rx="4" fill="#8FB8BF" opacity="0.6"/>
+    <rect x="188" y="80" width="22" height="10" rx="4" fill="#8FB8BF" opacity="0.6"/>
+    <!-- 数据行 -->
+    <rect x="52" y="100" width="56" height="8" rx="3" fill="#8FB8BF" opacity="0.7"/>
+    <rect x="128" y="100" width="40" height="8" rx="3" fill="#8FB8BF" opacity="0.45"/>
+    <rect x="52" y="118" width="62" height="8" rx="3" fill="#8FB8BF" opacity="0.7"/>
+    <rect x="128" y="118" width="46" height="8" rx="3" fill="#8FB8BF" opacity="0.45"/>
+    <rect x="52" y="136" width="50" height="8" rx="3" fill="#8FB8BF" opacity="0.7"/>
+    <rect x="128" y="136" width="36" height="8" rx="3" fill="#8FB8BF" opacity="0.45"/>
+    <!-- 合计行 -->
+    <rect x="52" y="152" width="120" height="10" rx="4" fill="#0F3B48"/>
+    <rect x="60" y="155" width="30" height="5" rx="2" fill="#4E9EC4"/>
+  </g>
+  <!-- 连接箭头 -->
+  <path d="M232 108 L266 108" stroke="#1D5B6B" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round"/>
+  <!-- 右：增长曲线面板 -->
+  <g>
+    <rect x="286" y="52" width="192" height="122" rx="10" fill="#114453" stroke="#1D5B6B" stroke-width="2"/>
+    <!-- 网格线 -->
+    <path d="M306 84 H458 M306 112 H458 M306 140 H458" stroke="#1D5B6B" stroke-width="1.5" opacity="0.6"/>
+    <!-- 柱 -->
+    <rect x="312" y="126" width="18" height="34" rx="4" fill="#4E9EC4" opacity="0.65"/>
+    <rect x="340" y="112" width="18" height="48" rx="4" fill="#4E9EC4" opacity="0.8"/>
+    <rect x="368" y="100" width="18" height="60" rx="4" fill="#4E9EC4"/>
+    <!-- 折线（橙色点缀） -->
+    <path d="M312 128 L340 106 L368 92 L396 108 L424 78 L448 66" fill="none" stroke="#E8760A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="340" cy="106" r="5" fill="#F2F8F9"/>
+    <circle cx="424" cy="78" r="5" fill="#F2F8F9"/>
+    <circle cx="448" cy="66" r="7" fill="#E8760A"/>
+  </g>
+  <!-- 底部小标注 -->
+  <rect x="40" y="186" width="76" height="14" rx="7" fill="rgba(255,255,255,0.06)"/>
+  <rect x="124" y="186" width="56" height="14" rx="7" fill="rgba(255,255,255,0.06)"/>
+  <rect x="188" y="186" width="90" height="14" rx="7" fill="rgba(255,255,255,0.06)"/>
+</svg>
