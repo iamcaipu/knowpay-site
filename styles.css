@@ -52,7 +52,8 @@ header.site {
   border-bottom: 1px solid var(--glass-line);
 }
 .nav { display: flex; align-items: center; justify-content: space-between; height: 66px; }
-.logo { font-size: 19px; font-weight: 700; letter-spacing: -0.2px; color: var(--ink); }
+.logo { display: flex; align-items: center; font-size: 19px; font-weight: 700; letter-spacing: -0.2px; color: var(--ink); }
+.logo-img { width: auto; height: 30px; margin-right: 10px; flex: none; }
 .logo:hover { text-decoration: none; }
 .logo em { font-style: normal; color: var(--brand); }
 .logo span { font-size: 12.5px; color: var(--ink-3); font-weight: 400; margin-left: 10px; letter-spacing: 0.5px; }
@@ -232,24 +233,19 @@ section.soft { background: var(--bg-deep); }
 .final p { color: var(--ink-3); margin-bottom: 26px; }
 
 /* ---------- 面包屑 ---------- */
-.crumb { font-size: 13.5px; color: var(--ink-3); padding: 22px 0 0; }
+.crumb { font-size: 13.5px; color: var(--ink-3); padding-top: 24px; }
 .crumb a { color: var(--ink-3); }
 .crumb span { margin: 0 6px; }
 
 /* ---------- 详情页 ---------- */
-.p-illo-img {
-  display: block; width: auto; height: 190px;
-  margin: 28px auto 6px;
-  background: var(--card); border: 1px solid var(--line); border-radius: 16px;
-  padding: 0 36px;
-}
-.p-hero { padding: 8px 0 56px; border-bottom: 1px solid var(--line); }
+.p-hero { padding: 44px 0 64px; border-bottom: 1px solid var(--line); }
+.p-hero .tag { margin-bottom: 20px; }
 .p-hero .inner { display: grid; grid-template-columns: 1.35fr 1fr; gap: 56px; align-items: start; }
-.p-hero h1 { font-size: 36px; line-height: 1.36; letter-spacing: -0.4px; margin-bottom: 16px; color: var(--ink); }
+.p-hero h1 { font-size: 36px; line-height: 1.36; letter-spacing: -0.4px; margin-bottom: 20px; color: var(--ink); }
 .p-hero h1 .dim { color: var(--ink-3); font-weight: 400; }
-.p-hero .sub { font-size: 17px; color: var(--ink-2); margin-bottom: 24px; }
+.p-hero .sub { font-size: 17px; color: var(--ink-2); margin-bottom: 32px; }
 .p-hero .pts { list-style: none; }
-.p-hero .pts li { position: relative; padding-left: 22px; font-size: 14.5px; color: var(--ink-2); margin-bottom: 6px; }
+.p-hero .pts li { position: relative; padding-left: 22px; font-size: 15px; color: var(--ink-2); margin-bottom: 11px; line-height: 1.6; }
 .p-hero .pts li::before { content: "◦"; position: absolute; left: 6px; color: var(--accent); }
 
 .buybox {
@@ -354,5 +350,4 @@ footer.site { background: var(--bg-deep); border-top: 1px solid var(--glass-line
   table.cmp { font-size: 13px; }
   table.cmp th, table.cmp td { padding: 9px 10px; }
   .card.media .card-img { height: 130px; }
-  .p-illo-img { height: 130px; }
 }
